@@ -1,2 +1,9 @@
+# PDF to HTML conversion dependencies
 pdfminer.six>=20221105
-beautifulsoup4>=4.12.0 
+beautifulsoup4>=4.12.0
+
+# HP 8903 control software dependencies
+matplotlib>=3.0.0
+numpy>=1.19.0
+pyserial>=3.5
+PyGObject>=3.0.0  # for GTK3 

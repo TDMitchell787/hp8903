@@ -26,6 +26,8 @@ Dependencies
 * numpy
 * pyserial
 * gobject (for GTK3)
+* pdfminer.six (for PDF conversion)
+* beautifulsoup4 (for HTML generation)
 
 Supported GPIB Hardware
 =====
@@ -65,10 +67,33 @@ Features
 * Ratio-type sweeps
 * Save plots and raw data
 * Control of filters
+* PDF to HTML conversion for documentation
 
 Future features may include: 
 
 * THD+n vs Power and THD+n vs voltage.
 * pyvisa support (Installing VISA in linux is a pain! slow progress..)
+
+PDF Documentation Conversion
+=====
+
+This repository includes functionality to convert HP 8903 PDF documentation to HTML format for easier viewing and searching. The conversion tool:
+
+* Preserves text layout and formatting
+* Maintains page structure
+* Adds navigation and styling
+* Supports multiple PDF files
+* Generates clean, readable HTML output
+
+To convert PDF documentation:
+
+1. Place PDF files in the `reference` directory
+2. Run the conversion script:
+   ```bash
+   python pdf_to_html.py
+   ```
+3. Find the converted HTML files in the `html_output` directory
+
+The converted HTML files maintain the original document structure while providing improved readability and searchability.
 
 
